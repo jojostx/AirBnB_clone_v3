@@ -138,14 +138,14 @@ EOF  all  create  destroy  help  quit  show  update
 
 (hbnb) all MyModel
 ** class doesn't exist **
-(hbnb) create BaseModel
+(hbnb) create User first_name="jane" last_name="doe" email="jane.doe@test.com" password="password"
 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) all BaseModel
-[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
-(hbnb) destroy BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+(hbnb) all User
+[[User] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'first_name': 'jane', 'last_name': 'doe', 'email': 'jane.doe', 'password': 'password', 'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
+(hbnb) show User 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+[User] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'first_name': 'jane', 'last_name': 'doe', 'email': 'jane.doe', 'password': 'password', 'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
+(hbnb) destroy User 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+(hbnb) show User 7da56403-cc45-4f1c-ad32-bfafeb2bb050
 ** no instance found **
 (hbnb) quit
 ```

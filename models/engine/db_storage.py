@@ -56,7 +56,7 @@ class DBStorage:
         Returns the object based on the class name and its ID, or None if not
         found
         """
-        cls = classes[cls]
+        cls = classes[cls.__name__]
         obj = self.__session.query(cls).filter(cls.id == id).first()
         return obj
 
