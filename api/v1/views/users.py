@@ -71,4 +71,3 @@ def put_user(user_id):
 
     storage.save()
     return make_response(jsonify(user.to_dict()), 200)
-

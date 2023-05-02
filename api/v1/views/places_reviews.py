@@ -81,4 +81,3 @@ def put_review(review_id):
 
     storage.save()
     return make_response(jsonify(review.to_dict()), 200)
-
