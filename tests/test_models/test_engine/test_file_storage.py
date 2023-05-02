@@ -33,17 +33,17 @@ class TestFileStorageDocs(unittest.TestCase):
 
     def test_get(self):
         """Tests to check get method"""
-        if storage.all("State").values():
-            first_state_id = list(storage.all("State").values())[0].id
-            first_state = storage.get("State", first_state_id)
-            self.assertTrue(isinstance(first_state, State))
+        if storage.all(User).values():
+            first_user_id = list(storage.all(User).values())[0].id
+            first_user = storage.get(User, first_user_id)
+            self.assertTrue(isinstance(first_user, User))
 
     def test_count(self):
         """Tests to check count method"""
         all_objects = storage.count()
-        all_states = storage.count("State")
+        all_users = storage.count(User)
         self.assertTrue(isinstance(all_objects, int))
-        self.assertTrue(isinstance(all_states, int))
+        self.assertTrue(isinstance(all_users, int))
 
     def test_pep8_conformance_file_storage(self):
         """Test that models/engine/file_storage.py conforms to PEP8."""
